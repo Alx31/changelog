@@ -1,0 +1,373 @@
+====================
+     04-01-2019
+====================
+
+
+   * device/xiaomi/beryllium/
+6c0d860  beryllium: Copy device fstab to vendor  [Alx31]
+e1fb25e  beryllium: Update to latest stable Pie fingerprint  [Alx31]
+   * device/xiaomi/sdm845-common/
+55a9db7  sdm845-common: build kernel with Clang 9.0.2  [Alx31]
+ccfbb3b  sdm845-common: Keep fpc in system-background  [Alx31]
+4679740  sdm845-common: Override stock fingerprint service init script  [Alx31]
+aaaa0d5  sdm845-common: Build separate system and vendor HIDL libs  [Alx31]
+ee1eae8  sdm845-common: Create RFS symlinks  [Alx31]
+a705c3c  sdm845-common: Generate non-hlos image mount points for A/B builds  [Alx31]
+   * kernel/xiaomi/sdm845/
+769a813b4f02  Merge remote-tracking branch 'aosip/pie' into 9.0  [Alx31]
+====================
+     03-31-2019
+====================
+
+
+====================
+     03-30-2019
+====================
+
+
+====================
+     03-29-2019
+====================
+
+
+====================
+     03-28-2019
+====================
+
+
+====================
+     03-27-2019
+====================
+
+
+   * kernel/xiaomi/sdm845/
+68ac278b8327  Merge remote-tracking branch 'android-linux-stable/kernel.lnx.4.9.r11-rel' into pie  [Akhil Narang]
+1e06d5069920  Merge 4.9.166 into kernel.lnx.4.9.r11-rel  [Nathan Chancellor]
+60771fc40287  Linux 4.9.166  [Greg Kroah-Hartman]
+8d785057c92b  ath10k: avoid possible string overflow  [Greg Kroah-Hartman]
+d746cb42155c  power: supply: charger-manager: Fix incorrect return value  [Greg Kroah-Hartman]
+40616958fe2a  pwm-backlight: Enable/disable the PWM before/after LCD enable toggle.  [Greg Kroah-Hartman]
+018ea3fea1c6  rtc: Fix overflow when converting time64_t to rtc_time  [Greg Kroah-Hartman]
+321c5ade5a06  scsi: ufs: fix wrong command type of UTRD for UFSHCI v2.1  [Greg Kroah-Hartman]
+69697675d318  USB: core: only clean up what we allocated  [Greg Kroah-Hartman]
+e6008a0525e4  lib/int_sqrt: optimize small argument  [Greg Kroah-Hartman]
+503b4cac8b20  serial: sprd: clear timeout interrupt only rather than all interrupts  [Greg Kroah-Hartman]
+fc42149932f1  arm64: traps: disable irq in die()  [Greg Kroah-Hartman]
+1987172de865  Hang/soft lockup in d_invalidate with simultaneous calls  [Greg Kroah-Hartman]
+356b5e16be48  serial: sprd: adjust TIMEOUT to a big value  [Greg Kroah-Hartman]
+dfe4f69f8ee0  tcp/dccp: drop SYN packets if accept queue is full  [Greg Kroah-Hartman]
+9e9e3a46e69d  ALSA: hda - Enforces runtime_resume after S3 and S4 for each codec  [Greg Kroah-Hartman]
+5ee86945565e  ALSA: hda - Record the current power state before suspend/resume calls  [Greg Kroah-Hartman]
+670d934a1ea1  locking/lockdep: Add debug_locks check in __lock_downgrade()  [Greg Kroah-Hartman]
+bd140b032555  Bluetooth: Fix decrementing reference count twice in releasing socket  [Greg Kroah-Hartman]
+d54a396379ba  media: v4l2-ctrls.c/uvc: zero v4l2_event  [Greg Kroah-Hartman]
+7002d0e52f33  ext4: brelse all indirect buffer in ext4_ind_remove_space()  [Greg Kroah-Hartman]
+8651fa1e1638  ext4: fix data corruption caused by unaligned direct AIO  [Greg Kroah-Hartman]
+d9f0ce85261f  ext4: fix NULL pointer dereference while journal is aborted  [Greg Kroah-Hartman]
+c818b2facea8  objtool: Move objtool_file struct off the stack  [Greg Kroah-Hartman]
+726c28f30ac1  futex: Ensure that futex address is aligned in handle_futex_death()  [Greg Kroah-Hartman]
+b84089b2b793  MIPS: Fix kernel crash for R6 in jump label branch function  [Greg Kroah-Hartman]
+c7ac334f2740  MIPS: Ensure ELF appended dtb is relocated  [Greg Kroah-Hartman]
+f6b55e7780e5  mips: loongson64: lemote-2f: Add IRQF_NO_SUSPEND to "cascade" irqaction.  [Greg Kroah-Hartman]
+92477062dc4f  udf: Fix crash on IO error during truncate  [Greg Kroah-Hartman]
+9c32ada4c07b  libceph: wait for latest osdmap in ceph_monc_blacklist_add()  [Greg Kroah-Hartman]
+cfa2d25ff8ad  iommu/amd: fix sg->dma_address for sg->offset bigger than PAGE_SIZE  [Greg Kroah-Hartman]
+eea23ca21bd3  drm/vmwgfx: Don't double-free the mode stored in par->set_mode  [Greg Kroah-Hartman]
+c179e6deb22a  mmc: pxamci: fix enum type confusion  [Greg Kroah-Hartman]
+====================
+     03-26-2019
+====================
+
+
+   * device/qcom/sepolicy/
+255e78c2  common: Add missing CNE rules  [martinusbe]
+9759dc2e  Partial Revert "sepolicy: Allow the QCOM Boot Control HAL needed permissions"  [martinusbe]
+ea4185f0  sepolicy: Allow the QCOM Boot Control HAL needed permissions  [martinusbe]
+   * packages/apps/Settings/
+0a1141a05a  Gestures: move to WolvesDen [1/2]  [Sparx]
+   * packages/apps/WolvesDen/
+c1d81fa  Gestures: move to WolvesDen [2/2]  [Sparx]
+====================
+     03-25-2019
+====================
+
+
+   * device/qcom/sepolicy/
+93cd8aa0  include device/gzosp/sepolicy  [martinusbe]
+   * hardware/qcom/audio-caf/msm8998/
+5d37a9b7  hal: fix channels swap for elliptic ultrasound devices  [martinusbe]
+41c740a4  hal: Add open source HAL for Elliptic Ultrasound  [martinusbe]
+   * hardware/qcom/display-caf/msm8998/
+0dd917c13  hwc: Remove _vendor from libbfqio  [martinusbe]
+====================
+     03-24-2019
+====================
+
+
+   * build/make/
+3ab9c2e03  build gzosp device sepolicy  [martinusbe]
+   * device/gzosp/sepolicy/
+64858f6  Label adb.network.port as system_prop  [martinusbe]
+947ff22  Clean-up recovery rules a bit  [martinusbe]
+   * kernel/xiaomi/sdm845/
+d7303b5d3cc8  Merge remote-tracking branch 'aosip/pie' into 9.0  [Alx31]
+   * system/sepolicy/
+4beb693c  sepolicy: Address denials for legacy last_kmsg file  [hardwareadictos]
+====================
+     03-23-2019
+====================
+
+
+   * frameworks/base/
+bd33cc4ffc7  Prevent NFE in SystemUI when parsing invalid int (2)  [martinusbe]
+80c3d2b72c8  Prevent NFE in SystemUI when parsing invalid int  [martinusbe]
+   * kernel/xiaomi/sdm845/
+4294e292842a  Merge remote-tracking branch 'android-linux-stable/kernel.lnx.4.9.r11-rel' into pie  [Akhil Narang]
+0d4f8d2475bd  Merge 4.9.165 into kernel.lnx.4.9.r11-rel  [Nathan Chancellor]
+1c453afcda4f  Linux 4.9.165  [Greg Kroah-Hartman]
+5e29da06183e  KVM: X86: Fix residual mmio emulation request to userspace  [Greg Kroah-Hartman]
+7b3c6c48bcaa  KVM: nVMX: Ignore limit checks on VMX instructions using flat segments  [Greg Kroah-Hartman]
+9748354a2a17  KVM: nVMX: Sign extend displacements of VMX instr's mem operands  [Greg Kroah-Hartman]
+45fe916eba52  drm/radeon/evergreen_cs: fix missing break in switch statement  [Greg Kroah-Hartman]
+7e1b5809df45  media: uvcvideo: Avoid NULL pointer dereference at the end of streaming  [Greg Kroah-Hartman]
+3b2bbd1bfbad  rcu: Do RCU GP kthread self-wakeup from softirq and interrupt  [Greg Kroah-Hartman]
+f61b68e1c774  md: Fix failed allocation of md_register_thread  [Greg Kroah-Hartman]
+5ed7a8f6f97f  perf intel-pt: Fix divide by zero when TSC is not available  [Greg Kroah-Hartman]
+4f7c16b5ef87  perf intel-pt: Fix overlap calculation for padding  [Greg Kroah-Hartman]
+300ef83e733e  perf auxtrace: Define auxtrace record alignment  [Greg Kroah-Hartman]
+d07d516086a4  perf intel-pt: Fix CYC timestamp calculation after OVF  [Greg Kroah-Hartman]
+7fb9a25c159c  bcache: never writeback a discard operation  [Greg Kroah-Hartman]
+6f76eeca2503  PM / wakeup: Rework wakeup source timer cancellation  [Greg Kroah-Hartman]
+33c164d59f3c  nfsd: fix wrong check in write_v4_end_grace()  [Greg Kroah-Hartman]
+e4ea22f928da  nfsd: fix memory corruption caused by readdir  [Greg Kroah-Hartman]
+7ed608268e69  NFS: Don't recoalesce on error in nfs_pageio_complete_mirror()  [Greg Kroah-Hartman]
+18ae814610c5  NFS: Fix an I/O request leakage in nfs_do_recoalesce  [Greg Kroah-Hartman]
+0da4596d6756  NFS: Fix I/O request leakages  [Greg Kroah-Hartman]
+e393365fa219  dm: fix to_sector() for 32bit  [Greg Kroah-Hartman]
+a3310231b9ef  ARM: s3c24xx: Fix boolean expressions in osiris_dvs_notify  [Greg Kroah-Hartman]
+380960e5a1a7  powerpc/ptrace: Simplify vr_get/set() to avoid GCC warning  [Greg Kroah-Hartman]
+b8f072b0f3d2  powerpc: Fix 32-bit KVM-PR lockup and host crash with MacOS guest  [Greg Kroah-Hartman]
+5d8fff639e74  powerpc/83xx: Also save/restore SPRG4-7 during suspend  [Greg Kroah-Hartman]
+f3b4d46f73bf  powerpc/powernv: Make opal log only readable by root  [Greg Kroah-Hartman]
+abd8c8608b20  powerpc/wii: properly disable use of BATs when requested.  [Greg Kroah-Hartman]
+9b53d0436bbb  powerpc/32: Clear on-stack exception marker upon exception return  [Greg Kroah-Hartman]
+241f3e338de2  jbd2: fix compile warning when using JBUFFER_TRACE  [Greg Kroah-Hartman]
+6713df747610  jbd2: clear dirty flag when revoking a buffer from an older transaction  [Greg Kroah-Hartman]
+16afcc35b09b  serial: 8250_pci: Have ACCES cards that use the four port Pericom PI7C9X7954 chip use the pci_pericom_setup()  [Greg Kroah-Hartman]
+1c1919ea222a  serial: 8250_pci: Fix number of ports for ACCES serial cards  [Greg Kroah-Hartman]
+a3a6508555da  8250: FIX Fourth port offset of Pericom PI7C9X7954 boards  [Greg Kroah-Hartman]
+0cfe11635803  serial: 8250_of: assume reg-shift of 2 for mrvl,mmp-uart  [Greg Kroah-Hartman]
+03b0466e03f9  serial: uartps: Fix stuck ISR if RX disabled with non-empty FIFO  [Greg Kroah-Hartman]
+bf20b9d83399  drm/i915: Relax mmap VMA check  [Greg Kroah-Hartman]
+54589079b6c5  i2c: tegra: fix maximum transfer size  [Greg Kroah-Hartman]
+c281b04191db  parport_pc: fix find_superio io compare code, should use equal test.  [Greg Kroah-Hartman]
+6e7a860f528e  intel_th: Don't reference unassigned outputs  [Greg Kroah-Hartman]
+4b0a5e83d1b8  device property: Fix the length used in PROPERTY_ENTRY_STRING()  [Greg Kroah-Hartman]
+45a67f153bb6  kernel/sysctl.c: add missing range check in do_proc_dointvec_minmax_conv  [Greg Kroah-Hartman]
+5b4e779e9554  mm/vmalloc: fix size check for remap_vmalloc_range_partial()  [Greg Kroah-Hartman]
+78f42f1156fd  mm: hwpoison: fix thp split handing in soft_offline_in_use_page()  [Greg Kroah-Hartman]
+55bfb2af94fd  nfit: acpi_nfit_ctl(): Check out_obj->type in the right place  [Greg Kroah-Hartman]
+b1fc27d168fc  clk: ingenic: Fix doc of ingenic_cgu_div_info  [Greg Kroah-Hartman]
+febc1a3fdc98  clk: ingenic: Fix round_rate misbehaving with non-integer dividers  [Greg Kroah-Hartman]
+51e197bc7d1b  clk: clk-twl6040: Fix imprecise external abort for pdmclk  [Greg Kroah-Hartman]
+4b5f060b09f6  ext2: Fix underflow in ext2_max_size()  [Greg Kroah-Hartman]
+14a0bfda4d24  ext4: fix crash during online resizing  [Greg Kroah-Hartman]
+05b6516f157e  cpufreq: pxa2xx: remove incorrect __init annotation  [Greg Kroah-Hartman]
+4ddd6174e37f  cpufreq: tegra124: add missing of_node_put()  [Greg Kroah-Hartman]
+b9ad2daba5a5  libertas_tf: don't set URB_ZERO_PACKET on IN USB transfer  [Greg Kroah-Hartman]
+a329c157b9a1  crypto: pcbc - remove bogus memcpy()s with src == dest  [Greg Kroah-Hartman]
+fc3a73f9a7f4  Btrfs: fix corruption reading shared and compressed extents after hole punching  [Greg Kroah-Hartman]
+0284f46b4ea1  btrfs: ensure that a DUP or RAID1 block group has exactly two stripes  [Greg Kroah-Hartman]
+9cfc01bb170b  m68k: Add -ffreestanding to CFLAGS  [Greg Kroah-Hartman]
+943ebf4d8c50  splice: don't merge into linked buffers  [Greg Kroah-Hartman]
+8c93709f25e7  fs/devpts: always delete dcache dentry-s in dput()  [Greg Kroah-Hartman]
+1ef34b9063fd  scsi: target/iscsi: Avoid iscsit_release_commands_from_conn() deadlock  [Greg Kroah-Hartman]
+98a52386a5a9  scsi: sd: Optimal I/O size should be a multiple of physical block size  [Greg Kroah-Hartman]
+85af500d69cb  scsi: virtio_scsi: don't send sc payload with tmfs  [Greg Kroah-Hartman]
+ffcad0a8f4ac  s390/virtio: handle find on invalid queue gracefully  [Greg Kroah-Hartman]
+c7a897a6c1b2  clocksource/drivers/exynos_mct: Clear timer interrupt when shutdown  [Greg Kroah-Hartman]
+c83aa58ceae2  clocksource/drivers/exynos_mct: Move one-shot check from tick clear to ISR  [Greg Kroah-Hartman]
+e24432b923cc  regulator: s2mpa01: Fix step values for some LDOs  [Greg Kroah-Hartman]
+686ca7fc0ba4  regulator: s2mps11: Fix steps for buck7, buck8 and LDO35  [Greg Kroah-Hartman]
+b8a811513a10  spi: pxa2xx: Setup maximum supported DMA transfer length  [Greg Kroah-Hartman]
+1a3f244a762a  spi: ti-qspi: Fix mmap read when more than one CS in use  [Greg Kroah-Hartman]
+d74bc74f634c  ACPI / device_sysfs: Avoid OF modalias creation for removed device  [Greg Kroah-Hartman]
+037a6cf0d5d3  tracing: Do not free iter->trace in fail path of tracing_open_pipe()  [Greg Kroah-Hartman]
+286ffaa029fe  tracing: Use strncpy instead of memcpy for string keys in hist triggers  [Greg Kroah-Hartman]
+776f01edc082  CIFS: Fix read after write for files with read caching  [Greg Kroah-Hartman]
+f8a0d9ccf296  CIFS: Do not reset lease state to NONE on lease break  [Greg Kroah-Hartman]
+9a0eec8d4df0  crypto: arm64/aes-ccm - fix logical bug in AAD MAC handling  [Greg Kroah-Hartman]
+dd39affb2566  crypto: hash - set CRYPTO_TFM_NEED_KEY if ->setkey() fails  [Greg Kroah-Hartman]
+f45c6c3affb5  libnvdimm: Fix altmap reservation size calculation  [Greg Kroah-Hartman]
+9f98f270a5a0  libnvdimm/pmem: Honor force_raw for legacy pmem regions  [Greg Kroah-Hartman]
+446553287d17  libnvdimm/label: Clear 'updating' flag after label-set update  [Greg Kroah-Hartman]
+a9624ba9f722  stm class: Prevent division by zero  [Greg Kroah-Hartman]
+2484aab93804  tmpfs: fix uninitialized return value in shmem_link  [Greg Kroah-Hartman]
+10a81a17aca7  net: set static variable an initial value in atl2_probe()  [Greg Kroah-Hartman]
+b2743d8fc050  nfp: bpf: fix ALU32 high bits clearance bug  [Greg Kroah-Hartman]
+cb986f5e4b55  nfp: bpf: fix code-gen bug on BPF_ALU | BPF_XOR | BPF_K  [Greg Kroah-Hartman]
+cdccf128b0d8  net: thunderx: make CFG_DONE message to run through generic send-ack sequence  [Greg Kroah-Hartman]
+703473b7ce78  mac80211_hwsim: propagate genlmsg_reply return code  [Greg Kroah-Hartman]
+3dc60d493b6d  phonet: fix building with clang  [Greg Kroah-Hartman]
+f8a845c14b9f  ARC: uacces: remove lp_start, lp_end from clobber list  [Greg Kroah-Hartman]
+c29505fda56e  ARCv2: lib: memcpy: fix doing prefetchw outside of buffer  [Greg Kroah-Hartman]
+eb85c846ec87  tmpfs: fix link accounting when a tmpfile is linked in  [Greg Kroah-Hartman]
+eda291201e6c  net: marvell: mvneta: fix DMA debug warning  [Greg Kroah-Hartman]
+46043c108a37  arm64: Relax GIC version check during early boot  [Greg Kroah-Hartman]
+5772f036d5a8  ASoC: topology: free created components in tplg load error  [Greg Kroah-Hartman]
+449bb940bab4  net: mv643xx_eth: disable clk on error path in mv643xx_eth_shared_probe()  [Greg Kroah-Hartman]
+d299d2cd55dc  qmi_wwan: apply SET_DTR quirk to Sierra WP7607  [Greg Kroah-Hartman]
+6faf692b7a82  pinctrl: meson: meson8b: fix the sdxc_a data 1..3 pins  [Greg Kroah-Hartman]
+72c50b0cbfa1  net: systemport: Fix reception of BPDUs  [Greg Kroah-Hartman]
+8d7045ab4023  scsi: libiscsi: Fix race between iscsi_xmit_task and iscsi_complete_task  [Greg Kroah-Hartman]
+740f4ae58736  assoc_array: Fix shortcut creation  [Greg Kroah-Hartman]
+625655727eb5  ARM: 8824/1: fix a migrating irq bug when hotplug cpu  [Greg Kroah-Hartman]
+2c304e47c6ff  clk: sunxi: A31: Fix wrong AHB gate number  [Greg Kroah-Hartman]
+2e0e73d7b82e  Input: st-keyscan - fix potential zalloc NULL dereference  [Greg Kroah-Hartman]
+9f7ae2d5c749  i2c: cadence: Fix the hold bit setting  [Greg Kroah-Hartman]
+4d8854af81cf  net: hns: Fix object reference leaks in hns_dsaf_roce_reset()  [Greg Kroah-Hartman]
+484e89a9a783  mm: page_alloc: fix ref bias in page_frag_alloc() for 1-byte allocs  [Greg Kroah-Hartman]
+c133d8eb894c  mm/gup: fix gup_pmd_range() for dax  [Greg Kroah-Hartman]
+489a9abf6068  floppy: check_events callback should not return a negative number  [Greg Kroah-Hartman]
+8faa6f2fc293  Input: matrix_keypad - use flush_delayed_work()  [Greg Kroah-Hartman]
+3c8b39a0a42b  Input: cap11xx - switch to using set_brightness_blocking()  [Greg Kroah-Hartman]
+e9ecab0dfbd4  ARM: OMAP2+: Variable "reg" in function omap4_dsi_mux_pads() could be uninitialized  [Greg Kroah-Hartman]
+6a5cda42ae22  s390/dasd: fix using offset into zero size array error  [Greg Kroah-Hartman]
+06d73d17b05b  gpu: ipu-v3: Fix CSI offsets for imx53  [Greg Kroah-Hartman]
+70522827d6e1  gpu: ipu-v3: Fix i.MX51 CSI control registers offset  [Greg Kroah-Hartman]
+38605cc68bc6  crypto: ahash - fix another early termination in hash walk  [Greg Kroah-Hartman]
+a475fe301ca0  crypto: caam - fixed handling of sg list  [Greg Kroah-Hartman]
+03750aa5447e  stm class: Fix an endless loop in channel allocation  [Greg Kroah-Hartman]
+ffe5a9920394  iio: adc: exynos-adc: Fix NULL pointer exception on unbind  [Greg Kroah-Hartman]
+3492ee47dbb7  ASoC: fsl_esai: fix register setting issue in RIGHT_J mode  [Greg Kroah-Hartman]
+b5d6f4707489  9p/net: fix memory leak in p9_client_create  [Greg Kroah-Hartman]
+0a97dbd82f40  9p: use inode->i_lock to protect i_size_write() under 32-bit  [Greg Kroah-Hartman]
+7f422aa63d5a  media: videobuf2-v4l2: drop WARN_ON in vb2_warn_zero_bytesused()  [Greg Kroah-Hartman]
+   * vendor/qcom/opensource/data-ipa-cfg-mgr/
+3a01e0a  ipacm: Fix XLAT mux id issue  [martinusbe]
+   * vendor/validus/
+0c8ad8d  gzosp: Add techpack/audio to include path also  [martinusbe]
+88c1de6  gzosp: Consider techpack/audio when generating kernel headers  [martinusbe]
+aad1d95  gzosp: qcom: Set proper CAF data-ipa-cfg-mgr pathmap  [martinusbe]
+4c78008  gzosp: qcom: Set data-ipa-cfg-mgr pathmap  [martinusbe]
+====================
+     03-22-2019
+====================
+
+
+   * frameworks/base/
+a597b5d6d7a  IMMS should preserve selected IME upon boot  [martinusbe]
+7d30800710a  Add bluetooth icon.  [martinusbe]
+c18127142dd  Clean up screenshot if nothing selected  [martinusbe]
+d53afcafc2e  Unbreak ambient display while Heads up is disabled  [martinusbe]
+   * manifest/
+53079b5  Val: not needed.  [GitHub]
+   * packages/apps/Bluetooth/
+17721fb9  Update Bluetooth to use adaptive icon.  [martinusbe]
+9fe3e6e7  Fix generating id in android namespace  [martinusbe]
+19ba19a5  Bluetooth: Remove unused string resources  [martinusbe]
+   * vendor/validus/
+f4798cf  qcom_target: Move RIL path mapping to core/config.mk  [martinusbe]
+====================
+     03-21-2019
+====================
+
+
+   * frameworks/av/
+368267fe3  Visualizer: fix native crash when visualizer release  [martinusbe]
+9765f83de  stagefright: add changes related to high-framerates in CameraSource  [martinusbe]
+   * frameworks/base/
+fe25dd1b01d  Fix NPE when creates wifi tracker  [martinusbe]
+4e9c2b1a2e4  Revert "Reset wifi tethering state when failing in QS."  [martinusbe]
+75ab54aefe0  Visualizer: fix native crash when visualizer release  [martinusbe]
+9c4880a38ac  Use fdeCheckPassword error code to indicate pw failure  [martinusbe]
+ab49134f5e1  frameworks: base: Port password retention feature  [martinusbe]
+   * hardware/ril/
+976a1fc  libril: Restore support for RIL v6, v8 and v9 stacks  [martinusbe]
+eaa2b94  libril: Protect against NULL unsolicited response function  [martinusbe]
+1c6e4c9  ril: Add guard makefile  [martinusbe]
+   * hardware/ril-caf/
+8f69bb6  Encode the Number of MNC Digits in CellIdentity  [martinusbe]
+   * manifest/
+4734441  val: track our cryptfs_hw  [martinusbe]
+   * packages/services/Telephony/
+07ae92d75  Don't start SIP service before decrypted  [martinusbe]
+   * system/vold/
+719e624  increase timeout for waiting on block device  [martinusbe]
+87d0f67  Wait for dm device to be ready before format  [martinusbe]
+4607c3c  vold: bring inline with LOS  [martinusbe]
+2b50105  vold: Move QCOM HW FDE inclusion under validus namespace  [martinusbe]
+7c588d4  system: vold: Remove crypto block device creation  [martinusbe]
+7f1eba5  vold: Add Hardware FDE feature  [martinusbe]
+   * vendor/qcom/opensource/cryptfs_hw/
+cbd061f  validus  [martinusbe]
+b2e6ab0  cryptfs_hw: bring inline with LOS  [martinusbe]
+447cb91  cryptfs_hw: Remove unused variable  [martinusbe]
+17e131f  cryptfs_hw: add missing logging tag  [martinusbe]
+0e1a6d7  cryptfs_hw: Featureize support for waiting on QSEE to start  [martinusbe]
+8d0769e  cryptfs_hw: Add compatibility for pre-O hw crypto  [martinusbe]
+   * vendor/validus/
+8a28ea9  vendor: bring inline with LOS  [martinusbe]
+db60919  soong_config: Add flag for crypto waiting on QSEE to start  [martinusbe]
+b9dd1e1  soong_config: Add flag for legacy HW FDE  [martinusbe]
+dcc5560  soong_config: Add new flags for HW FDE  [martinusbe]
+====================
+     03-20-2019
+====================
+
+
+====================
+     03-19-2019
+====================
+
+
+   * kernel/xiaomi/sdm845/
+ed1890b962f0  Merge 4.9.164 into kernel.lnx.4.9.r11-rel  [Nathan Chancellor]
+b830af015d2f  Merge tag 'v4.9.164' into pie  [Akhil Narang]
+f5fd34f057e4  Linux 4.9.164  [Greg Kroah-Hartman]
+5ebcee949fa0  vhost/vsock: fix vhost vsock cid hashing inconsistent  [Greg Kroah-Hartman]
+0da773c54309  of: Support const and non-const use for to_of_node()  [Greg Kroah-Hartman]
+883f7c326fda  mmc: tmio_mmc_core: don't claim spurious interrupts  [Greg Kroah-Hartman]
+3decc9df1099  It's wrong to add len to sector_nr in raid10 reshape twice  [Greg Kroah-Hartman]
+a3a870c02d9b  ALSA: bebob: use more identical mod_alias for Saffire Pro 10 I/O against Liquid Saffire 56  [Greg Kroah-Hartman]
+4f964aa5eac7  perf/x86: Fixup typo in stub functions  [Greg Kroah-Hartman]
+83fe8732906d  tcp/dccp: remove reqsk_put() from inet_child_forget()  [Greg Kroah-Hartman]
+7cbb0ab1bf66  gro_cells: make sure device is up in gro_cells_receive()  [Greg Kroah-Hartman]
+0bea3824197f  rxrpc: Fix client call queueing, waiting for channel  [Greg Kroah-Hartman]
+8fa3e87926a3  vxlan: Fix GRO cells race condition between receive and link delete  [Greg Kroah-Hartman]
+510c625222a1  ipvlan: disallow userns cap_net_admin to change global mode/flags  [Greg Kroah-Hartman]
+713b91c0c05d  missing barriers in some of unix_sock ->addr and ->path accesses  [Greg Kroah-Hartman]
+2f3d0e94ae1b  net: Set rtm_table to RT_TABLE_COMPAT for ipv6 for tables > 255  [Greg Kroah-Hartman]
+c4bec922def2  mdio_bus: Fix use-after-free on device_register fails  [Greg Kroah-Hartman]
+92382cd957f4  net/x25: fix a race in x25_bind()  [Greg Kroah-Hartman]
+f46dc1577e0c  net/mlx4_core: Fix qp mtt size calculation  [Greg Kroah-Hartman]
+038a48c3714e  net/mlx4_core: Fix locking in SRIOV mode when switching between events and polling  [Greg Kroah-Hartman]
+de42e2ee7162  net/mlx4_core: Fix reset flow when in command polling mode  [Greg Kroah-Hartman]
+9b0e9c285be4  vxlan: test dev->flags & IFF_UP before calling gro_cells_receive()  [Greg Kroah-Hartman]
+40852d58feb5  tcp: handle inet_csk_reqsk_queue_add() failures  [Greg Kroah-Hartman]
+e8273cea4c33  route: set the deleted fnhe fnhe_daddr to 0 in ip_del_fnhe to fix a race  [Greg Kroah-Hartman]
+a0f1f55ba4e5  ravb: Decrease TxFIFO depth of Q3 and Q2 to one  [Greg Kroah-Hartman]
+3b3ce4cc16cb  pptp: dst_release sk_dst_cache in pptp_sock_destruct  [Greg Kroah-Hartman]
+0651889ba732  net/x25: reset state in x25_connect()  [Greg Kroah-Hartman]
+312354581b2d  net/x25: fix use-after-free in x25_device_event()  [Greg Kroah-Hartman]
+b89d3ce01027  net: sit: fix UBSAN Undefined behaviour in check_6rd  [Greg Kroah-Hartman]
+8aad2336a4eb  net/hsr: fix possible crash in add_timer()  [Greg Kroah-Hartman]
+a582b20fd743  net: hsr: fix memory leak in hsr_dev_finalize()  [Greg Kroah-Hartman]
+e0c435a3abf7  l2tp: fix infoleak in l2tp_ip6_recvmsg()  [Greg Kroah-Hartman]
+ccc2aae5c4df  KEYS: restrict /proc/keys by credentials at open time  [Greg Kroah-Hartman]
+45eaae252770  ACPICA: Reference Counts: increase max to 0x4000 for large servers  [Greg Kroah-Hartman]
+====================
+     03-18-2019
+====================
+
+
+   * device/xiaomi/beryllium/
+3e0e923  fstab:don't enforce on me plz.  [Alx31]
+8386c7c  add a drunk builder  [Alx31]
+b9c1a4c  fix build  [Alx31]
+4e9be9f  validus switch  [Alx31]
+   * device/xiaomi/sdm845-common/
+30cbb47  BC: build permissive.  [Alx31]
+e1351d9  validus  [Alx31]
+   * kernel/xiaomi/sdm845/
+b22af94be115  Merge remote-tracking branch 'aosip/pie' into 9.0  [Alx31]
